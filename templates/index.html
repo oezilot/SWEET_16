@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:90px">SWEET 16</h1>
+          <h2>Zwischen Herzklopfen und Herzstillstand; Ein autobiographischer Comic.</h2>
+          <button id="downloadButton">Download PDF</button>
+          <button>About Me</button>
+          <button>About the Story</button>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            window.location.href = 'https://drive.google.com/uc?export=download&id=1kWgUBuXvwtDsWOreBdtM-N9WdxWlsXc1';
+        });
+    </script>
+</body>
+</html>

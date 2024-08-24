@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/Myfont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0020-007E; /* Basic Latin (letters, punctuation, etc.) */
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/Myfont2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0030-0039; /* Digits 0-9 */
+}
+
+
+.hero-image {
+    background-image: url("../dancing.png"), url("../hintergrund_liniert.png");
+    height: 90vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+  }
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'MyCustomFont';
+    font-size: 40px;
+}
+
+button {
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    font-size: 28px; /* Adjust as needed */
+    padding: 15px 20px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Optional: rounded corners */
+    background-color: #fa6982; /* Button background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #6ec8fa; /* Darker background on hover */
+}
